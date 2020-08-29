@@ -1,0 +1,125 @@
+<div class = "box-area">
+
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 1</mat-card-title>
+      </div>
+      <button class = "deleteButton" (click)="deleteImage(0)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[0]"/>
+      </div>
+      <div *ngIf="!imageURLArray[0]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 0)">
+      </div>
+
+    </mat-card-content>
+  </mat-card>
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 2</mat-card-title>
+      </div>
+      <button  class = "deleteButton" (click)="deleteImage(1)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[1]"/>
+      </div>
+      <div *ngIf="!imageURLArray[1]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 1)">
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 3</mat-card-title>
+      </div>
+      <button  class = "deleteButton" (click)="deleteImage(2)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[2]"/>
+      </div>
+      <div *ngIf="!imageURLArray[2]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 2)">
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 4</mat-card-title>
+
+      </div>
+      <button  class = "deleteButton" (click)="deleteImage(3)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[3]"/>
+      </div>
+      <div *ngIf="!imageURLArray[3]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 3)">
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 5</mat-card-title>
+
+      </div>
+      <button  class = "deleteButton" (click)="deleteImage(4)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[4]"/>
+      </div>
+      <div *ngIf="!imageURLArray[4]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 4)">
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class = "box" >
+    <mat-card-header class="box-header">
+      <div class="box-title">
+        <mat-card-title >Box 6</mat-card-title>
+
+      </div>
+      <button  class = "deleteButton" (click)="deleteImage(5)">
+        <mat-icon class="icon" >delete</mat-icon>
+      </button>
+    </mat-card-header>
+    <mat-card-content class="box-content">
+      <div>
+        <img  class = "uploaded-image"[src]="imageURLArray[5]"/>
+      </div>
+      <div *ngIf="!imageURLArray[5]">
+        <label >Upload file</label>
+        <input  type ="file" (change)="uploadImage($event, 5)">
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+
+</div>
+
+

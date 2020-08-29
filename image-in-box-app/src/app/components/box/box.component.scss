@@ -1,0 +1,42 @@
+.box-area{
+  margin: auto;
+  margin-top: 4em;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(6, auto);
+}
+
+.box{
+  margin-right: 1em;
+  border: 1px;
+  background-color: white;
+  padding: 0px;
+  color: black;
+  width: 32%;
+}
+
+.box-header{
+  border: 1px;
+  background-color: grey;
+}
+
+.box-title{
+  padding: 0.5em;
+  display: flex;
+}
+
+.box-content{
+ padding: 0.5em;
+ height: 10em;
+}
+
+.uploaded-image{
+  width: 18em;
+}
+.deleteButton{
+  position: absolute;
+  right: 0;
+  margin-right: 10px;
+  top: 5px;
+}
